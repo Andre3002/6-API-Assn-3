@@ -13,7 +13,7 @@ function displayResults(responseJson) {
     $("div").empty();
     
     if (responseJson.code == 404){
-        $("div").append(`<h1> 404 Error </h1>`)
+        $("div").append(`<h2> Dog breed not found. Please try again. </h2>`)
     } else {
         $("div").append(`<img src="${responseJson.message}">`)
     }
